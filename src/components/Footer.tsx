@@ -1,4 +1,4 @@
-import { PiPhone, PiWhatsappLogo, PiEnvelope } from "react-icons/pi";
+import { PiEnvelope, PiPhone, PiWhatsappLogo } from "react-icons/pi";
 import logoImg from "../assets/space-skate-logo.png";
 
 const FooterTopic = (TopicTitle: string, TopicContent: string[]) => {
