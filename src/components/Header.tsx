@@ -1,5 +1,5 @@
 import { PiAlien, PiHeartStraight, PiMagnifyingGlass, PiShoppingCart } from "react-icons/pi";
-import logoImg from "../assets/space-skate-logo.png";
+import logoImg from "../assets/space-skate-logo.webp";
 import { Input } from "./ui/input";
 
 export default function Header() {
