@@ -3,6 +3,18 @@ import logoImg from "../assets/space-skate-logo.png";
 import { Input } from "./ui/input";
 
 export default function Header() {
+  const navbarLinks = ["ROUPAS", "TÊNIS", "SKATE SHOP", "ACESSÓRIOS"];
+
+  const NavbarItem = (items: string[]) => {
+    return (
+      <>
+        {items.map((item, index) => (
+          <li className="cursor-pointer" key={index}>{item}</li>
+        ))}
+      </>
+    )
+  }
+
   return (
     <div className="flex flex-col items-center">
       <header className="flex items-center justify-center gap-25 mt-2 w-full">
@@ -19,14 +31,11 @@ export default function Header() {
           <PiShoppingCart />
         </div>
       </header>
-      
+
       <nav>
         <ul className="flex gap-20 pt-1">
-          <li>ROUPAS</li>
-          <li>TÊNIS</li>
-          <li>SKATE SHOP</li>
-          <li>ACESSÓRIOS</li>
-          <li className="font-bold text-dark-purple">% PROMOÇÕES</li>
+          {NavbarItem(navbarLinks)}
+          <li className="font-bold text-dark-purple cursor-pointer">% PROMOÇÕES</li>
         </ul>
       </nav>
     </div>

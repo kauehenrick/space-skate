@@ -1,12 +1,12 @@
 import { PiEnvelope, PiPhone, PiWhatsappLogo } from "react-icons/pi";
 import logoImg from "../assets/space-skate-logo.png";
 
-const FooterTopic = (TopicTitle: string, TopicContent: string[]) => {
+const FooterTopic = (topicTitle: string, topicContent: string[]) => {
   return (
     <ul>
-      <p className="font-bold mb-2">{TopicTitle}</p>
-      {TopicContent.map(item => (
-        <li className="text-[0.813rem] mb-1 text-primary-gray hover:text-black duration-800 cursor-pointer">{item}</li>
+      <p className="font-bold mb-2">{topicTitle}</p>
+      {topicContent.map((item, index) => (
+        <li className="text-[0.813rem] mb-1 text-primary-gray hover:text-black duration-800 cursor-pointer" key={index}>{item}</li>
       ))}
     </ul>
   )
