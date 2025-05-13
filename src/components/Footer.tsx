@@ -1,5 +1,6 @@
 import { PiEnvelope, PiPhone, PiWhatsappLogo } from "react-icons/pi";
 import logoImg from "../assets/space-skate-logo.webp";
+import Image from "next/image";
 
 const FooterTopic = (topicTitle: string, topicContent: string[]) => {
   return (
@@ -31,7 +32,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <img className="h-37.5" src={logoImg} alt="logo space skate" />
+      <Image className="w-[14.063rem] h-37.5" src={logoImg} alt="logo space skate" />
     </footer>
   )
 } 

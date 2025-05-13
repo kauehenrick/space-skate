@@ -1,6 +1,6 @@
 import { PiAlien, PiHeartStraight, PiMagnifyingGlass, PiShoppingCart } from "react-icons/pi";
 import logoImg from "../assets/space-skate-logo.webp";
-import { Input } from "./ui/input";
+import Image from "next/image";
 
 export default function Header() {
   const navbarLinks = ["ROUPAS", "TÊNIS", "SKATE SHOP", "ACESSÓRIOS"];
@@ -18,10 +18,10 @@ export default function Header() {
   return (
     <div className="flex flex-col items-center">
       <header className="flex items-center justify-center gap-25 mt-2 w-full">
-        <img className="h-25" src={logoImg} alt="logo space skate" />
+        <Image className="w-37.5 h-25" src={logoImg} alt="logo space skate" />
 
-        <search className="flex items-center justify-between w-125 h-10 border-b rounded">
-          <Input className="border-0 focus-visible:border-0 focus-visible:ring-0" placeholder="Pesquisar" />
+        <search className="flex items-center justify-between w-125 h-10 border-b rounded pl-5.5 pr-3.5">
+          <input className="appearance-none border-none outline-none shadow-none p-0 m-0 bg-transparent" placeholder="Pesquisar" />
           <PiMagnifyingGlass className="cursor-pointer" />
         </search>
 
